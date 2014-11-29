@@ -116,3 +116,7 @@ zstyle ':completion:*:descriptions' format $'\e[01;33m -- %d --\e[0m'
 # zstyle ':completion:*:messages' format $'\e[01;35m -- %d --\e[0m'
 zstyle ':completion:*:warnings' format $'\e[01;31m -- No Matches Found --\e[0m'
 # zstyle ':completion:*:corrections' format $'\e[01;32m -- %d (errors: %e) --\e[0m'
+
+if [[ $USERNAME = 'root' ]]; then
+    source /usr/local/uvcdat/2.0.0/bin/setup_runtime.sh
+fi
